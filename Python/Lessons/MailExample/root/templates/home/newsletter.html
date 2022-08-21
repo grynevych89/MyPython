@@ -1,0 +1,20 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Подписка{% endblock title %}
+
+{% block content %}
+    <div class="main-box">
+        <h4>Подписка на рассылку новостей сайта</h4>
+        <form id="form-2" method="post" action="{% url 'newsletter' %}">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="email">E-Mail</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="submit-group">
+                <input type="submit" value="Подписаться">
+                <input type="reset" value="Сбросить">
+            </div>
+        </form>
+    </div>
+{% endblock content %}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Мой сайт - {% block title %}{% endblock %}</title>
+    <link rel="icon" href="{% static 'img/favicon.png' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Мой сайт</h1>
+    </header>
+    <hr>
+    <nav>
+        |
+        <a href="{% url 'index' %}">Главная</a>
+        |
+        <a href="{% url 'about' %}">Про сайт</a>
+        |
+        <a href="{% url 'contact' %}">Контакты</a>
+        |
+        <a href="{% url 'newsletter' %}">Подписка</a>
+        |
+        <a href="{% url 'admin_page' %}">Админка</a>
+        |
+        <a href="{% url 'video_page' %}">Видео</a>
+        |
+    </nav>
+    <hr>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <hr>
+    <footer>
+        <h5>Copyright: &copy; MyCompany - Kyiv, 2021</h5>
+    </footer>
+</body>
+</html>

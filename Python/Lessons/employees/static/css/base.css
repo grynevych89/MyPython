@@ -1,0 +1,41 @@
+body {
+    text-align: center;
+    padding: 5px 5%;
+    background-image: url('../img/bg1.jpg');
+    background-size: 125%;
+    color: white;
+    font: 12pt 'Verdana';
+}
+
+header>h1 {
+    text-shadow: 2px 2px red;
+    font-size: 50px;
+    text-align: center;
+}
+
+nav {
+    padding: 3px;
+}
+
+nav a {
+    color: yellow;
+    text-decoration: none;
+    padding: 10px;
+}
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+header {
+    padding-top: 50px
+}
+
+.info-box {
+    color: navy;
+    background-color: whitesmoke;
+    padding: 20px;
+}

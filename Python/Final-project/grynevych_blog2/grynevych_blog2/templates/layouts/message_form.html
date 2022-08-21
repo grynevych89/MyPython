@@ -1,0 +1,42 @@
+{% load static %}
+<!-- messageForm -->
+								<div class="messageForm">
+									<form id="contactForm" data-toggle="validator">
+										<div class="row">
+											<div class="col-12 col-sm-6">
+												<div class="form-group position-relative">
+													<input id="name" type="text" class="form-control w-100 d-block" required data-error="NEW ERROR MESSAGE">
+													<label class="labelAbsolute mb-0 font-weight-normal position-absolute">Name</label>
+												</div>
+											</div>
+											<div class="col-12 col-sm-6">
+												<div class="form-group position-relative">
+													<input id="email" type="email" class="form-control w-100 d-block" required data-error="NEW ERROR MESSAGE">
+													<label class="labelAbsolute mb-0 font-weight-normal position-absolute">Email</label>
+												</div>
+											</div>
+											<div class="col-12 col-sm-6">
+												<div class="form-group position-relative">
+													<input type="sub" type="text" class="form-control w-100 d-block" required data-error="NEW ERROR MESSAGE">
+													<label class="labelAbsolute mb-0 font-weight-normal position-absolute">Subject</label>
+												</div>
+											</div>
+											<div class="col-12 col-sm-6">
+												<div class="form-group position-relative">
+													<input type="tel" type="tel" class="form-control w-100 d-block" required data-error="NEW ERROR MESSAGE">
+													<label class="labelAbsolute mb-0 font-weight-normal position-absolute">Phone</label>
+												</div>
+											</div>
+											<div class="col-12">
+												<div class="form-group position-relative">
+													<textarea id="message" class="form-control w-100 d-block textareaInput" required data-error="NEW ERROR MESSAGE"></textarea>
+													<label class="labelAbsolute mb-0 font-weight-normal position-absolute">Message</label>
+												</div>
+											</div>
+										</div>
+										<div class="col-12">
+											<div id="msgSubmit" class="form-message hidden"></div>
+										</div>
+										<button id="form-submit" type="submit" class="btn btnThemeOutline position-relative btnMinSmall mt-4 mt-lg-8" data-hover="Send Message"><span class="d-block btnText">Send Message</span></button>
+									</form>
+								</div>

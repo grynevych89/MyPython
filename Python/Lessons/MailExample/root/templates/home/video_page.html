@@ -1,0 +1,14 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Видео{% endblock title %}
+
+{% block content %}
+    <div class="main-box">
+        <h4>Видео галерея</h4>
+        <section>
+            <video src="../../media/video/{{ video_file_name }}" controls="controls"></video>
+            <br>
+            <a href="../../media/video/{{ video_file_name }}">Скачать это видео</a>
+        </section>
+    </div>
+{% endblock content %}

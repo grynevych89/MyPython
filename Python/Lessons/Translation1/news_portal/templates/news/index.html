@@ -1,0 +1,40 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+<h3 style="color: purple">Лента новостей</h3>
+<table class="news" border="1">
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>About</th>
+        <th>Publish</th>
+        <th>Author</th>
+        <th>Source</th>
+        <th>Control</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for item in all_posts %}
+    <tr>
+        <td>{{ item.title }}</td>
+        <td>{{ item.about }}</td>
+        <td>{{ item.publish }}</td>
+        <td>{{ item.author }}</td>
+        <td>{{ item.source }}</td>
+        <td>...</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+<style>
+    .news {
+        width: 100%;
+        margin: 15px;
+    }
+    .news th,
+    .news td {
+        padding: 3px;
+    }
+
+</style>
+{% endblock %}

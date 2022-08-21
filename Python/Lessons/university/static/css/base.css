@@ -1,0 +1,44 @@
+body {
+    text-align: left;
+    padding: 0px 5%;
+    background-image: url('../img/bg2.jpg');
+    background-size: 100%;
+    color: white;
+    font: 12pt 'Verdana';
+}
+
+header>h1 {
+    text-shadow: 2px 2px green;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
+
+footer {
+    color: yellow;
+    text-align: center;
+}
+
+nav {
+    padding: 3px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.space {
+    padding: 50px 10%; /* Поля */
+    background: #E5D3BD; /* Цвет фона */
+    border: 2px solid green; /* Параметры рамки */
+   }

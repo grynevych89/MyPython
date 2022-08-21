@@ -1,0 +1,51 @@
+{% extends 'base/master.html' %}
+
+{% block title %}Авторизация{% endblock %}
+
+{% block content %}
+<div class="main-box">
+    <h2>Авторизация</h2>
+    <form action="/users/login" method="post">
+        <p>
+            <label for="login">Логин:</label><br>
+            <input type="text" id="login" name="login" class="inp" required>
+        </p>
+        <p>
+            <label for="pass1">Пароль:</label><br>
+            <input type="password" id="pass1" name="pass1" class="inp" required>
+        </p>
+        <p>
+            <input type="checkbox" id="rem" name="rem" value="yes">
+            <label for="rem">Оставаться в системе</label>
+        </p>
+        <p style="text-align: center; margin-top: 25px">
+            <input type="submit" value="Войти" class="btn btn-success my-btn">
+            <input type="reset" value="Отмена" class="btn btn-danger my-btn">
+        </p>
+    </form>
+</div>
+<style>
+    form {
+    border: 1px solid white;
+    width: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px 30px 15px 30px;
+    background-color: whitesmoke;
+    color: gray;
+    text-align: left;
+    }
+
+    .inp {
+    width: 99%;
+    padding: 5px;
+    }
+
+    .my-btn {
+    width: 120px;
+    padding: 3px;
+    border-radius: 5px;
+    }
+
+</style>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base/master.html' %}
+
+{% block title %}Список сотрудников{% endblock %}
+
+{% block content %}
+<div class="main-box">
+    <h2>Список сотрудников</h2>
+    {% if 'user' in session and session['user'] == 'admin' %}
+        <a href="/employees/create">Добавить сотрудника</a>
+    {% endif %}
+</div>
+{% endblock %}

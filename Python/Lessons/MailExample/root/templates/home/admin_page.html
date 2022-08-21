@@ -1,0 +1,55 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Админ-панель{% endblock title %}
+
+{% block content %}
+    <div class="main-box">
+        <h4>Админ-панель</h4>
+        <!-- Вывод адресов рассылки -->
+        <table class="my-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>E-mail</th>
+                    <th>Select</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for e in emails %}
+                    <tr>
+                        <td>{{ e.id }}</td>
+                        <td>{{ e.email }}</td>
+                        <td><input id="check" type="checkbox" name="check-{{ e.id }}" value="{{ e.id }}"></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <!-- Форма сообщения -->
+        <form id="send-massage-form" method="post" action="{% url 'admin_page' %}">
+            {% csrf_token %}
+            <!-- Subject -->
+            <div class="form-group">
+                <label for="subject">Тема:</label>
+                <input id="subject" type="text" name="subject"
+                placeholder="Тема сообщения..." required>
+            </div>
+            <!-- Message -->
+            <div class="form-group">
+                <label for="message">Текст:</label>
+                <textarea id="message" name="message" rows="7"
+                placeholder="Текст сообщения..." required></textarea>
+            </div>
+            <!-- Author -->
+            <div class="form-group">
+                <label for="author">Автор:</label>
+                <input id="author" type="text" name="author"
+                placeholder="Автор сообщения..." required>
+            </div>
+            <!-- Buttons -->
+            <div class="submit-group">
+                <input type="submit" value="Отправить">
+                <input type="reset" value="Очистить">
+            </div>
+        </form>
+    </div>
+{% endblock content %}

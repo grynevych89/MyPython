@@ -1,0 +1,1 @@
+web: gunicorn grynevych_createsite.wsgi --log-file -

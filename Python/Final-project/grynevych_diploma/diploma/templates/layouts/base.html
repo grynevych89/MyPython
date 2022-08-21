@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="keywords" content="Grynevych">
+    <meta name="description" content="Grynevych">
+    <meta name='freelancehunt' content='26c06024982225f'>
+    <!-- Title -->
+    <title>Grynevych | {% block title %}{% endblock title %}</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <!-- Site Main Style sheet css -->
+    <link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script defer src="/examples/libs/bootstrap-5/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+{% include 'layouts/navbar.html' %}
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+{% include 'layouts/footer.html' %}
+
+
+{% include 'layouts/loading.html' %}
+</body>
+
+<!-- Back to Top -->
+<a href="#" class="back-to-top back-to-top-pulse"><i class="fa fa-caret-up"></i></a>
+
+
+{% include 'layouts/scripts.html' %}
+
+</body>
+</html>

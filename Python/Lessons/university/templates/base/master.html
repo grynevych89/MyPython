@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/footers/">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<!-- Header START -->
+<header>
+    <header class="p-3 bg-dark text-white">
+        <nav>
+            <div class="row">
+                <div class="col-md-8 left">
+                    <a href="/" class="btn btn-outline-success">Главная</a>
+                    <a href="/about" class="btn btn-outline-success">Про Коледж</a>
+                    <a href="/contact" class="btn btn-outline-success">Контакты</a>
+                    <a href="/administrations" class="btn btn-outline-success">Администрация</a>
+                    <a href="/teachers" class="btn btn-outline-success">Преподаватели</a>
+                    <a href="/abiturient" class="btn btn-outline-success">Абитуриенту</a>
+                    <a href="/cadet" class="btn btn-outline-success">Курсанту</a>
+                    <a href="/partners" class="btn btn-outline-success">Наши партнеры</a>
+                    <a href="/news/list" class="btn btn-outline-success">Новости</a>
+                </div>
+                <div class="col-md-4 right">
+                    <a href="/users/login" class="btn btn-info">Логин</a>
+                    <a href="/users/register" class="btn btn-warning">Регистрация</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+</header>
+<!-- Header END -->
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+</body>
+<!-- Footer START -->
+<footer class="p-3 bg-dark text-white">
+    <h6>Copyright by Grynevych - Kyiv, 2021 </h6>
+</footer>
+<!-- Footer END -->
+</html>

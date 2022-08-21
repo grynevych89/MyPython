@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e25acf8f-90f5-4bad-92b3-69ca6581c9a0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Final-project/grynevych/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Final-project/grynevych/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final-project/grynevych_blog2/grynevych_blog2" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Final-project/grynevych_blog2/grynevych_blog2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final-project/grynevych_diploma/.idea/grynevych_diploma.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Final-project/grynevych_diploma/.idea/grynevych_diploma.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final-project/grynevych_diploma/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Final-project/grynevych_diploma/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final-project/grynevych_diploma/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Final-project/grynevych_diploma/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final-project/grynevych_diploma/diploma" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Final-project/grynevych_diploma/diploma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lessons/django/web_shop1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lessons/django/web_shop1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lessons/django/web_shop1/webshop1" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lessons/django/web_shop1/webshop1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MailExample/root" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MailExample/root" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="243lcXdKC1UtF05enBPJyKKkfKj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e25acf8f-90f5-4bad-92b3-69ca6581c9a0" name="Changes" comment="" />
+      <created>1642867231598</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1642867231598</updated>
+    </task>
+    <servers />
+  </component>
+</project>

@@ -1,0 +1,55 @@
+{% extends 'base/master.html' %}
+
+{% block title %}Регистрация{% endblock %}
+
+{% block content %}
+<div class="main-box">
+    <h2>Регистрация</h2>
+    <form action="/users/register" method="post">
+        <p>
+            <label for="login">Логин:</label><br>
+            <input type="text" id="login" name="login" class="inp" required>
+        </p>
+        <p>
+            <label for="pass1">Пароль:</label><br>
+            <input type="password" id="pass1" name="pass1" class="inp" required>
+        </p>
+        <p>
+            <label for="pass2">Подтверждение пароля:</label><br>
+            <input type="password" id="pass2" name="pass2" class="inp" required>
+        </p>
+        <p>
+            <label for="email">E-Mail:</label><br>
+            <input type="email" id="email" name="email" class="inp" required>
+        </p>
+        <p style="text-align: center; margin-top: 25px">
+            <input type="submit" value="Отправить" class="btn btn-success my-btn">
+            <input type="reset" value="Очистить" class="btn btn-danger my-btn">
+        </p>
+    </form>
+</div>
+<style>
+    form {
+    border: 1px solid white;
+    width: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px 30px 15px 30px;
+    background-color: whitesmoke;
+    color: gray;
+    text-align: left;
+    }
+
+    .inp {
+    width: 99%;
+    padding: 5px;
+    }
+
+    .my-btn {
+    width: 120px;
+    padding: 3px;
+    border-radius: 5px;
+    }
+
+</style>
+{% endblock %}

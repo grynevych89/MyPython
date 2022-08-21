@@ -1,0 +1,578 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Главная{% endblock title %}
+
+
+{% block content %}
+{% load static %}
+<div id="wrapper">
+    <div id="btn-exit">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+    </div>
+    <div class="transition"></div>
+    <!-- header begin -->
+    <header class="transparent header-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="d-flex justify-content-between">
+                        <div class="align-self-center header-col-left">
+                            <!-- logo begin -->
+                            <div id="logo">
+                                <a href="/">
+                                    Grynevych Nikolay
+                                </a>
+                            </div>
+                            <!-- logo close -->
+                        </div>
+                        <div class="align-self-center ml-auto header-col-mid">
+                            <!-- mainmenu begin -->
+                            <ul id="mainmenu" class="scrollnav">
+                                <li><a href="#section-resume">Резюме</a></li>
+                                <li></li>
+                                <li><a href="#section-about">Про сайт</a></li>
+                                <li></li>
+                                <li><a href="#section-portfolio">Портфолио</a></li>
+                                <li></li>
+                                <li><a href="#section-contact">Контакты</a></li>
+                                <li></li>
+                            </ul>
+                            <!-- mainmenu close -->
+                        </div>
+                        <div class="align-self-center ml-auto header-col-right">
+                            <div class="social-icons s-border sm-hide">
+                                <a href="https://www.facebook.com/grynevych.mykola"><i class="fa fa-facebook fa-lg"></i></a>
+                                <a href="https://www.instagram.com/nick.grynevych/"><i class="fa fa-instagram fa-lg"></i></a>
+                                <!-- <a href="#"><i class="fa fa-twitter fa-lg"></i></a>-->
+                                <!-- <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>-->
+                            </div>
+                            <span id="menu-btn"></span>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header close -->
+
+    <!-- content begin -->
+    <div class="no-bottom no-top dark">
+        <div id="top"></div>
+        <!-- section begin -->
+        <section id="section-main" class="full-height text-light no-padding">
+            <div class="de-video-container">
+                <div class="de-video-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 offset-md-2 text-center wow fadeIn" data-wow-delay=".25s">
+                                <h1 class="big text-light">Grynevych Nikolay</h1>
+                                <div class="spacer-10"></div>
+                                <div class="typed-words">
+                                    I'm
+                                    <div class="typed-strings">
+                                        <p>Python Back-End Developer</p>
+                                        <p>Freelancer</p>
+                                    </div>
+                                    <div class="typed"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="de-video-overlay"></div>
+
+                <!-- load your video here -->
+                <video autoplay="" loop="" muted="" poster="images/video-poster.jpg">
+                    <source src="{% static 'videos/video.mp4' %}" type="video/mp4"/>
+                </video>
+
+            </div>
+        </section>
+        <!-- section close -->
+
+        <!-- section begin -->
+        <section id="section-resume" class="dark">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12 wow fadeInRight">
+                        <h4 class="title">Я сейчас свободен для работы</h4>
+                        <h2 class="title">Мое резюме</h2>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 wow fadeInRight" data-wow-delay=".25s">
+                        <h3 class="s_border">Образование</h3>
+                        <ul class="d_timeline">
+                            <li class="d_timeline-item">
+                                <h3 class="d_timeline-title">2011-2012</h3>
+                                <p class="d_timeline-text"><span
+                                        class="d_title">Моторист<span>Училище №3 от "ОНЮА"</span></span>Специальность:
+                                    Моторист 2го класса</p>
+                            </li>
+                            <li class="d_timeline-item">
+                                <h3 class="d_timeline-title">2012 - 2016</h3>
+                                <p class="d_timeline-text"><span class="d_title">Судовые Энергетические Установки<span>ОМУРП</span></span>Специальность:
+                                    инженер-механик</p>
+                            </li>
+                            <li class="d_timeline-item">
+                                <h3 class="d_timeline-title">Май 2021 - Ноябрь 2021</h3>
+                                <p class="d_timeline-text"><span class="d_title">Язык програмирования Python<span>IT Step Academy</span></span>Успешно
+                                    закончил курс по Python. Есть базовые и практические навыки. Чистый код.</p>
+                            </li>
+                            <li class="d_timeline-item">
+                                <h3 class="d_timeline-title">Май 2021 - Ноябрь 2021</h3>
+                                <p class="d_timeline-text"><span
+                                        class="d_title">Python + Django<span>IT Step Academy</span></span>Успешно
+                                    закончил курс по web-разработке сайтов на Django. Осное направление "Back-End"</p>
+                            </li>
+                            <li class="d_timeline-item">
+                                <h3 class="d_timeline-title">Май 2021 - Ноябрь 2021</h3>
+                                <p class="d_timeline-text"><span class="d_title">Django Rest Framework (DRF)<span>IT Step Academy</span></span>Базовые
+                                    знания по REST Api.</p>
+                            </li>
+                            <li class="d_timeline-item">
+                                <h3 class="d_timeline-title">Май 2021 - Ноябрь 2021</h3>
+                                <p class="d_timeline-text"><span class="d_title">Flask micro framework<span>IT Step Academy</span></span>Успешно
+                                    изучили и получили практические навыми по Flask</p>
+                            </li>
+                            <li class="d_timeline-item">
+                                <h3 class="d_timeline-title">Май 2021 - Ноябрь 2021</h3>
+                                <p class="d_timeline-text"><span
+                                        class="d_title">React & Angular<span>IT Step Academy</span></span>Получил
+                                    базовые знания по React & Angular.</p>
+                            </li>
+                            <li class="d_timeline-item">
+                                <h3 class="d_timeline-title">Май 2021 - Ноябрь 2021</h3>
+                                <p class="d_timeline-text"><span class="d_title">Системы контроля версий GitHub<span>IT Step Academy</span></span>Успешно
+                                    изучили и неоднократно использовали на практике</p>
+                            </li>
+                            <li class="d_timeline-item">
+                                <h3 class="d_timeline-title">Май 2021 - Ноябрь 2021</h3>
+                                <p class="d_timeline-text"><span
+                                        class="d_title">Базы данных и СУБД (MySQL и SQLite)<span>IT Step Academy</span></span>Успешно
+                                    изучили и неоднократно использовали на практике.</p>
+                            </li>
+                            <li class="d_timeline-item">
+                                <h3 class="d_timeline-title">Май 2021 - Ноябрь 2021</h3>
+                                <p class="d_timeline-text"><span class="d_title">Heroku - платформа, поддерживающая ряд языков программирования<span>IT Step Academy</span></span>Успешно
+                                    изучили и неоднократно использовали на практике.</p>
+                            </li>
+                            <li class="d_timeline-item">
+                                <h3 class="d_timeline-title">Май 2021 - Ноябрь 2021</h3>
+                                <p class="d_timeline-text"><span class="d_title">HTML & CSS<span>IT Step Academy</span></span>Успешно
+                                    изучили и неоднократно использовали на практике.</p>
+                            </li>
+                            <li class="d_timeline-item">
+                                <h3 class="d_timeline-title">2016 - 2021</h3>
+                                <p class="d_timeline-text"><span
+                                        class="d_title">WordPress<span>Самостоятельное изучение</span></span>Самостоятельное
+                                    изучение CMS WordPress. Имею практические навыки в создании сайтов.</p>
+                            </li>
+                            <li class="d_timeline-item">
+                                <h3 class="d_timeline-title">2020 - 2021</h3>
+                                <p class="d_timeline-text"><span
+                                        class="d_title">Tilda<span>Самостоятельное изучение</span></span>Самостоятельное
+                                    изучение Tilda. Имею практические навыки в создании сайтов.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6 wow fadeInRight" data-wow-delay=".5s">
+                        <h3 class="s_border">Работа</h3>
+                        <ul class="d_timeline">
+                            <li class="d_timeline-item">
+                                <h3 class="d_timeline-title">2016-2020</h3>
+                                <p class="d_timeline-text"><span class="d_title">Администратор сайта, Модератор<span>Стаж 4 года</span>Администрирование, наполнение, копирайтинг, обратная связь с клиентами, обработка заказов, работа с фото.
+                                </p>
+                            </li>
+                            <li class="d_timeline-item">
+                                <h3 class="d_timeline-title">2020 - 2021</h3>
+                                <p class="d_timeline-text"><span class="d_title">Продавец-консультант<span>Эпицентр-К (Стаж 1 год)</span>Сортировка товаров, их наполнение и консультация покупателей. Получил большой опыт работы с людьми.</span>
+                                </p>
+                            </li>
+                            <li class="d_timeline-item">
+                                <h3 class="d_timeline-title">Май 2021 - Настоящее время</h3>
+                                <p class="d_timeline-text"><span class="d_title">Торговый представитель компании<span>АПЕКС (Стаж 6 месяцев)</span></span>Консультация
+                                    покупателей по товарам компании, выкладка товара</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="spacer-50"></div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="s_border">Programming Skills</h3>
+                        <div class="skill-bar">
+                            <h5>Python</h5>
+                            <div class="de-progress">
+                                <div class="value"></div>
+                                <div class="progress-bar" data-value="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <h5>Django</h5>
+                            <div class="de-progress">
+                                <div class="value"></div>
+                                <div class="progress-bar" data-value="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <h5>Django Rest Api</h5>
+                            <div class="de-progress">
+                                <div class="value"></div>
+                                <div class="progress-bar" data-value="40%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <h5>Flask</h5>
+                            <div class="de-progress">
+                                <div class="value"></div>
+                                <div class="progress-bar" data-value="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <h5>HTML & CSS</h5>
+                            <div class="de-progress">
+                                <div class="value"></div>
+                                <div class="progress-bar" data-value="70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="s_border">Other Skills</h3>
+                        <div class="skill-bar">
+                            <h5>MySql, SQLite</h5>
+                            <div class="de-progress">
+                                <div class="value"></div>
+                                <div class="progress-bar" data-value="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <h5>GitHub</h5>
+                            <div class="de-progress">
+                                <div class="value"></div>
+                                <div class="progress-bar" data-value="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <h5>React & Angular</h5>
+                            <div class="de-progress">
+                                <div class="value"></div>
+                                <div class="progress-bar" data-value="30%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section close -->
+
+        <!-- section begin -->
+        <section id="section-about" class="dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 wow fadeInRight">
+                        <h4 class="title">Who I Am?</h4>
+                        <h2 class="title">I'm Python/Django Back-End Developer</h2>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 mb-sm-30 text-center">
+                        <div class="de-images">
+                            <div class="d-hover-zoom wow fadeInRight">
+                                <a class="image-popup" href="{% static 'images/misc/1.jpg' %}">
+                                    <img class="img-fluid" src="{% static 'images/misc/1.jpg' %}" alt=""/>
+                                </a>
+                            </div>
+                            <div class="d-hover-zoom di-small-2 wow fadeInLeft">
+                                <a class="image-popup" href="{% static 'images/misc/2.jpg' %}">
+                                    <img src="{% static 'images/misc/2.jpg' %}" alt=""/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-md-1 wow fadeInRight" data-wow-delay=".5s">
+                        <h2>Я, <span class="id-color">Гриневич Николай</span></h2>
+                        <p>
+                            На моем сайте представлена информация обо мне, как о разработчике.
+                            Ищу работу на постоянной основе в Офис. <br>
+                            Хочу получить больше практического опыта в разработке.
+                        </p>
+                        <ul class="info-list text-white">
+                            <li><span class="d_title">Возраст:</span><span class="d_value">32</span></li>
+                            <li><span class="d_title">Страна:</span><span class="d_value">Украина</span></li>
+                            <li><span class="d_title">Город:</span><span class="d_value">Киев</span></li>
+                            <li><span class="d_title">Email:</span><span class="d_value">grynevych89@gmail.com</span>
+                            </li>
+                            <li><span class="d_title">Телефон:</span><span class="d_value">+38 095 215 91 75</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="spacer-80"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="s_border">Мои услуги</h3>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb30">
+                        <div class="f-box f-icon-left f-icon-box">
+                            <i class="fa fa-laptop id-color"></i>
+                            <div class="fb-text">
+                                <h4>Разработка Back-End на языке Python</h4>
+                                <p>Пишу чистый код, который заставит ваш сайт или приложение работать</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb30 wow fadeInRight" data-wow-delay=".25s">
+                        <div class="f-box f-icon-left f-icon-box">
+                            <i class="fa fa-paper-plane-o id-color"></i>
+                            <div class="fb-text">
+                                <h4>Email рассылка</h4>
+                                <p>Создаю логику для почтовой рассылки</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-30 wow fadeInRight" data-wow-delay=".5s">
+                        <div class="f-box f-icon-left f-icon-box">
+                            <i class="fa fa-line-chart id-color"></i>
+                            <div class="fb-text">
+                                <h4>Аналитика и продвижение</h4>
+                                <p>Помогу в продвижении Вашего сайта</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-sm-30 wow fadeInRight" data-wow-delay="0s">
+                        <div class="f-box f-icon-left f-icon-box">
+                            <i class="fa fa-object-group id-color"></i>
+                            <div class="fb-text">
+                                <h4>Разработка сайтов на Django</h4>
+                                <p>Создаю полный, рабочий функционал Вашему сайту.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-sm-30 wow fadeInRight" data-wow-delay=".25s">
+                        <div class="f-box f-icon-left f-icon-box">
+                            <i class="fa fa-hdd-o id-color"></i>
+                            <div class="fb-text">
+                                <h4>Загрузка сайта на хостинг</h4>
+                                <p>Загружу Ваш готовый сайт на хостинг. Поддержка и обсуживание</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-sm-30 wow fadeInRight" data-wow-delay=".5s">
+                        <div class="f-box f-icon-left f-icon-box">
+                            <i class="fa fa-comments-o id-color"></i>
+                            <div class="fb-text">
+                                <h4>Сотрудничество</h4>
+                                <p>Готов к обсуждению любых производственных и коммерческих вопросов,
+                                    готов стать порядочным и надежным партнером,
+                                    взяв на себя все обязательства по воплощению идей и
+                                    задач в вопросах веб-индустрии.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--                    <div class="spacer-80"></div>-->
+                <!--                    <div class="row">-->
+                <!--                        <div class="col-md-12">-->
+                <!--                            <h3 class="s_border">Testimonials</h3>-->
+                <!--                        </div>-->
+                <!--                        <div class="col-md-12">-->
+                <!--                            <div id="testimonial-carousel" class="owl-carousel owl-theme wow fadeInUp">-->
+                <!--                                <blockquote class="testimonial-big text-light">-->
+                <!--                                    I'm always impressed with the services. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis-->
+                <!--                                    nostrud exercitation ullamco laboris nisi ut aliquip.-->
+                <!--                                    <img src="images/people/1.jpg" alt="" />-->
+                <!--                                    <span class="name">John, Customer</span>-->
+                <!--                                </blockquote>-->
+                <!--                                <blockquote class="testimonial-big text-light">-->
+                <!--                                    I'm always impressed with the services. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis-->
+                <!--                                    nostrud exercitation ullamco laboris nisi ut aliquip.-->
+                <!--                                    <img src="images/people/2.jpg" alt="" />-->
+                <!--                                    <span class="name">Sandra, Customer</span>-->
+                <!--                                </blockquote>-->
+                <!--                                <blockquote class="testimonial-big text-light">-->
+                <!--                                    I'm always impressed with the services. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis-->
+                <!--                                    nostrud exercitation ullamco laboris nisi ut aliquip.-->
+                <!--                                    <img src="images/people/3.jpg" alt="" />-->
+                <!--                                    <span class="name">Michael, Customer</span>-->
+                <!--                                </blockquote>-->
+                <!--                                <blockquote class="testimonial-big text-light">-->
+                <!--                                    I'm always impressed with the services. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis-->
+                <!--                                    nostrud exercitation ullamco laboris nisi ut aliquip.-->
+                <!--                                    <img src="images/people/4.jpg" alt="" />-->
+                <!--                                    <span class="name">George, Customer</span>-->
+                <!--                                </blockquote>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+            </div>
+        </section>
+        <!-- section close -->
+
+        <!-- section begin -->
+        <section id="section-portfolio" class="dark">
+            <div class="container">
+                <!-- portfolio filter begin -->
+                <div class="row">
+                    <div class="col-lg-12 wow fadeInRight">
+                        <h4 class="title">Мои работы</h4>
+                        <!--                            <h2 class="title">Мои работы</h2>-->
+                        <div class="title-underline"></div>
+                    </div>
+                    <div class="col-md-12 text-center wow fadeInRight" data-wow-delay=".25s">
+                        <ul id="filters">
+                            <li><a href="#" data-filter="*" id="btn_all" class="selected">Все проекты</a></li>
+                            <li><a href="#" data-filter=".website">Веб Сайты</a></li>
+                            <li><a href="#" data-filter=".illustration">Веб-дизайн</a></li>
+                            <li><a href="#" data-filter=".mobile">Мобильные приложения</a></li>
+                            <li><a href="#" data-filter=".photography">Desktop приложения</a></li>
+                        </ul>
+                        <div id="gallery"
+                             class="gallery full-gallery de-gallery zoom-gallery row sequence wow fadeInRight"
+                             data-wow-delay=".5s">
+                            <!-- gallery item -->
+                            <div class="item col-md-4 mb30 gallery-item website"
+                                 data-value="project-details-image.html">
+                                <a class="picframe" href="{% static 'images/portfolio/1.png' %}" title="Web Shop"
+                                   data-source="#">
+                                        <span class="overlay">
+                                            <span class="d-title">Web Shop</span>
+                                        </span>
+                                    <img src="{% static 'images/portfolio/1.png' %}" alt=""/>
+                                </a>
+                            </div>
+                            <div class="item col-md-4 mb30 gallery-item website"
+                                 data-value="project-details-image.html">
+                                <a class="picframe" href="{% static 'images/portfolio/2.png' %}" title="Resume 1"
+                                   data-source="https://grynevych.herokuapp.com/">
+                                        <span class="overlay">
+                                            <span class="d-title">Resume 1</span>
+                                        </span>
+                                    <img src="{% static 'images/portfolio/2.png' %}" alt=""/>
+                                </a>
+                            </div>
+                            <div class="item col-md-4 mb30 gallery-item website"
+                                 data-value="project-details-image.html">
+                                <a class="picframe" href="{% static 'images/portfolio/3.png' %}" title="Resume 2"
+                                   data-source="#">
+                                        <span class="overlay">
+                                            <span class="d-title">Resume 2</span>
+                                        </span>
+                                    <img src="{% static 'images/portfolio/3.png' %}" alt=""/>
+                                </a>
+                            </div>
+                            <!-- close gallery item -->
+                            <!-- gallery item -->
+                            <div class="item col-md-4 mb30 gallery-item photography">
+                                <a class="picframe" href="{% static 'images/portfolio/2.jpg' %}" title="Bolo"
+                                   data-source="https://themeforest.net/item/bolo-onepage-creative-website-template/25030305">
+                                        <span class="overlay">
+                                            <span class="d-title">Bolo</span>
+                                        </span>
+                                    <!--                                        <img src="{% static 'images/portfolio/2.jpg' %}" alt="" />-->
+                                </a>
+                            </div>
+                            <!-- close gallery item -->
+                            <!-- gallery item -->
+                            <div class="item col-md-4 mb30 gallery-item illustration">
+                                <a class="picframe" href="{% static 'images/portfolio/3.jpg' %}" title="Elaxo"
+                                   data-source="https://themeforest.net/item/elaxo-app-and-software-website-template/29226060">
+                                        <span class="overlay">
+                                            <span class="d-title">Elaxo</span>
+                                        </span>
+                                    <!--                                        <img src="{% static 'images/portfolio/3.jpg' %}" alt="" />-->
+                                </a>
+                            </div>
+                            <!-- close gallery item -->
+                            <!-- gallery item -->
+                            <div class="item col-md-4 mb30 gallery-item photography illustration mobile">
+                                <a class="picframe" href="{% static 'images/portfolio/4.jpg' %}" title="Jonna"
+                                   data-source="https://themeforest.net/item/jonna-personal-portfolio-website-template/26361888">
+                                        <span class="overlay">
+                                            <span class="d-title">Jonna</span>
+                                        </span>
+                                    <!--                                        <img src="{% static 'images/portfolio/4.jpg' %}" alt="" />-->
+                                </a>
+                            </div>
+                            <!-- close gallery item -->
+                            <!-- gallery item -->
+                            <div class="item col-md-4 mb30 gallery-item photography mobile website">
+                                <a class="picframe" href="{% static 'images/portfolio/2.png' %}" title="Justica"
+                                   data-source="https://themeforest.net/item/justica-lawyer-and-attorney-website-template/29485331">
+                                        <span class="overlay">
+                                            <span class="d-title">Resume</span>
+                                        </span>
+                                    <!--                                        <img src="{% static 'images/portfolio/2.png' %}" alt="" />-->
+                                </a>
+                            </div>
+                            <!-- close gallery item -->
+                            <!-- gallery item -->
+                            <div class="item col-md-4 mb30 gallery-item mobile website">
+                                <a class="picframe" href="{% static 'images/portfolio/3.png' %}" title="Bluetec"
+                                   data-source="https://themeforest.net/item/bluetec-saas-it-software-startup-landing-page-template/27106031">
+                                        <span class="overlay">
+                                            <span class="d-title">Resume</span>
+                                        </span>
+                                    <!--                                        <img src="{% static 'images/portfolio/3.png' %}" alt="" />-->
+                                </a>
+                            </div>
+                            <!-- close gallery item -->
+                        </div>
+                    </div>
+                    <!-- portfolio filter close -->
+                </div>
+            </div>
+        </section>
+        <!-- section close -->
+
+        <!-- section begin -->
+        <section id="section-contact" class="contact-area dark section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 wow fadeInRight">
+                        <h4 class="title">Я сейчас свободен для работы</h4>
+                        <h2 class="title">Обратная связь</h2>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <form name="contactForm" id="form-1" class="contact-form form row form-default wow fadeInRight"
+                      data-wow-delay=".25s" method="post" action="{% url 'contact' %}">
+                    {% csrf_token %}
+                    <div class="main-box controls col-md-12">
+                        <div class="field-set">
+                            <input type="email" name="email" id="email" class="form-control"
+                                   placeholder="Введите Email..."/>
+                            <div class="line-fx"></div>
+                        </div>
+                        <div class="form-group field-set">
+                            <input type="text" name="subject" id="subject" class="form-control"
+                                   placeholder="Введите тему сообщения..."/>
+                            <div class="line-fx"></div>
+                        </div>
+                        <div class="field-set">
+                            <textarea name="message" id="message" class="form-control" rows="12"
+                                      placeholder="Введите текст сообщения..."></textarea>
+                            <div class="line-fx"></div>
+                        </div>
+                    </div>
+                    <div class="spacer-single"></div>
+                    <div class="col-md-12 text-center">
+                        <div class="messages" id="submit">
+                            <input type="submit" value="Отправить сообщение" class="after-btn btn btn-custom color-2"
+                                   data-text="Send Message"/>
+                        </div>
+                        <div id="mail_success" class="success">Your message has been sent successfully.</div>
+                        <div id="mail_fail" class="error">Sorry, error occured this time sending your message.</div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+    <!-- content close -->
+</div>
+{% endblock content %}

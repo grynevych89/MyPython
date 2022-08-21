@@ -1,0 +1,15 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Сбой отправки{% endblock title %}
+
+{% block content %}
+    <div class="main-box">
+        <h4>
+            <span style="color: red">
+                Отправка не удалась!
+                <br>
+                {{reason}}
+            </span>
+        </h4>
+    </div>
+{% endblock content %}

@@ -1,0 +1,77 @@
+body {
+    text-align: center;
+    font: 13pt 'Trebuchet MS';
+    padding: 10px 10%;
+    color: gray;
+}
+.main-box {
+    padding-bottom: 30px;
+}
+.main-box h4 {
+    font-size: 18pt;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+.main-box h5 {
+    font-size: 14pt;
+    margin-bottom: 30px;
+}
+
+#form-1,
+#form-2,
+#send-massage-form {
+    border: 1px solid silver;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 400px;
+}
+
+.form-group {
+    text-align: left;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.form-group input {
+    width: 95%;
+    padding: 5px;
+}
+
+.form-group textarea {
+    width: 97%;
+}
+
+.submit-group {
+    margin: 15px;
+}
+
+.submit-group input {
+    width: 45%;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 10px;
+}
+
+.submit-group input:hover {
+    color: whitesmoke;
+    background: gray;
+    cursor: pointer;
+}
+
+.my-table {
+    width: 60%;
+    margin: 15px auto;
+    border: 1px solid silver;
+}
+.my-table th,
+.my-table td {
+    padding: 5px;
+}
+.my-table th {
+    border-bottom: 1px solid silver;
+}
+
+video {
+    width: 90%;
+}

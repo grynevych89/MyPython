@@ -1,0 +1,18 @@
+{% extends 'base/master.html' %}
+
+{% block title %}Page 403{% endblock %}
+
+{% block content %}
+<div class="main-box">
+    <h2>Page 403</h2>
+    <h5 style="color: red">
+        Доступ для
+        {% if 'user' in session %}
+            {{ session['user'] }}
+        {% else %}
+            Guest
+        {% endif %}
+        запрещен!
+    </h5>
+</div>
+{% endblock %}

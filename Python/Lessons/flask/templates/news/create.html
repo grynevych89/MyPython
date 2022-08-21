@@ -1,0 +1,59 @@
+{% extends 'base/master.html' %}
+
+{% block title %}Добавление новости{% endblock %}
+
+{% block content %}
+<div class="main-box">
+    <h2>Добавление новости</h2>
+    <form action="/news/create" method="post" enctype="multipart/form-data">
+        <p>
+            <label for="title">Заголовок:</label><br>
+            <input type="text" id="title" name="title" class="inp" required>
+        </p>
+        <p>
+            <label for="about">Описание:</label><br>
+            <textarea name="about" id="about" rows="3" class="inp" required></textarea>
+        </p>
+        <p>
+            <label for="content">Контент:</label><br>
+            <textarea name="content" id="content" rows="10" class="inp" required></textarea>
+        </p>
+        <p>
+            <label for="image">Изображение:</label><br>
+            <input type="file" id="image" name="image" class="inp" required>
+        </p>
+        <p>
+            <label for="status">Статус:</label><br>
+            <input type="text" id="status" name="status" class="inp" required>
+        </p>
+        <p style="text-align: center; margin-top: 25px">
+            <input type="submit" value="Отправить" class="btn btn-success my-btn">
+            <input type="reset" value="Очистить" class="btn btn-danger my-btn">
+        </p>
+    </form>
+</div>
+<style>
+    form {
+    border: 1px solid white;
+    width: 75%;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px 30px 15px 30px;
+    background-color: whitesmoke;
+    color: gray;
+    text-align: left;
+    }
+
+    .inp {
+    width: 99%;
+    padding: 5px;
+    }
+
+    .my-btn {
+    width: 120px;
+    padding: 3px;
+    border-radius: 5px;
+    }
+
+</style>
+{% endblock %}

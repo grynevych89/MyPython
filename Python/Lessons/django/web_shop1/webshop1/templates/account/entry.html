@@ -1,0 +1,54 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Авторизация{% endblock title %}
+
+
+{% block content %}
+{% load static %}
+
+<div>
+    <h4>
+        Вы еще не зарегистрированы? &nbsp; > &nbsp;
+        <span>
+            <a style="color: blue; font-size: 0.8em" href="/account/register">Регистрация</a>
+        </span>
+    </h4>
+    <hr>
+</div>
+
+<form id="form-1" action="/account/entry" method="post" onsubmit="return true">
+    {% csrf_token %}
+    <p>
+        <label for="login">Логин:</label><br>
+        <input type="text" id="login" name="login" class="inp" required><br>
+        <span id="login-err" class="err"></span>
+    </p>
+    <p>
+        <label for="pass1">Пароль:</label><br>
+        <input type="password" id="pass1" name="pass1" class="inp" required><br>
+        <span id="pass1-err" class="err"></span>
+    </p>
+    <p style="margin-top: 30px">
+        <input type="submit" id="submit" value="Войти" class="btn btn-success my-btn">
+        <input type="reset" id="reset" value="Отмена" class="btn btn-danger my-btn">
+    </p>
+</form>
+<style>
+    .inp {
+        width:40%;
+        padding: 5px;
+    }
+    label {
+        font: italic 12pt 'Trebuchet MS';
+    }
+    .err {
+        font-style: italic;
+        color: red;
+        margin-top: 3px;
+    }
+    .my-btn {
+        width: 150px;
+        margin-right: 5px;
+    }
+</style>
+{% endblock content %}

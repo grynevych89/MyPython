@@ -1,0 +1,16 @@
+{% extends 'base/master.html' %}
+
+{% block title %}Отчет о добавлении новости{% endblock %}
+
+{% block content %}
+<div class="main-box">
+    <h2>Отчет о добавлении новости</h2>
+    <hr>
+    <div class="info-box">
+        <span style="color: {{ context.mess_color }}">
+            {{ context.message }}
+        </span>
+        <br>
+    </div>
+</div>
+{% endblock %}
